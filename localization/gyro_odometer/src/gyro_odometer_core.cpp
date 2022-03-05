@@ -25,6 +25,7 @@ GyroOdometer::GyroOdometer()
   tf_buffer_(this->get_clock()),
   tf_listener_(tf_buffer_),
   output_frame_(declare_parameter("base_link", "base_link"))
+  //YY:节点类的构造函数中处理一切该节点需要处理的问题，比如订阅其他话题，发布其他话题
 {
   vehicle_twist_with_cov_sub_ = create_subscription<geometry_msgs::msg::TwistWithCovarianceStamped>(
     "vehicle/twist_with_covariance", rclcpp::QoS{100},
