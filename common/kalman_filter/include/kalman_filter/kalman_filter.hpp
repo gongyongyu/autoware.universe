@@ -60,7 +60,7 @@ public:
    * @param A coefficient matrix of x for process model
    * @param B coefficient matrix of u for process model
    * @param C coefficient matrix of x for measurement model
-   * @param Q covariance matrix for process model
+   * @param Q covariance matrix for process model 预测过程噪声协方差矩阵
    * @param R covariance matrix for measurement model
    * @param P initial covariance of estimated state
    */
