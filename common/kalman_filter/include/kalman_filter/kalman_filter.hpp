@@ -33,7 +33,8 @@ public:
    */
   KalmanFilter();
 
-  /**
+  /** 
+   * x(k) = A*x(k-1)+B*u 
    * @brief constructor with initialization
    * @param x initial state
    * @param A coefficient matrix of x for process model
